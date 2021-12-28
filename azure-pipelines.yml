@@ -20,7 +20,7 @@ stages:
             command: buildAndPush
             buildcontext: $(Build.Repository.LocalPath)
             repository: $(webRepository)
-            Dockerfile: '$(Build.SourcesDirectory)/Tailspin.SpaceGame.Web/DockerFile'
+            Dockerfile: $(Build.SourcesDirectory)/Tailspin.SpaceGame.Web/DockerFile
             containerRegistry: 'Container Registry Connection'
             tags: |
               $(tag)
