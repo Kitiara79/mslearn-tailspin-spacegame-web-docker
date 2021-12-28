@@ -21,7 +21,7 @@ stages:
             buildcontext: $(Build.Repository.LocalPath)
             repository: $(webRepository)
             Dockerfile: '$(Build.SourcesDirectory)/Tailspin.SpaceGame.Web/DockerFile'
-            containerRegistry: 'tailspinspacegame20958.azurecr.io'
+            containerRegistry: 'Resource Manager - Tailspin - Space Game'
             tags: |
               $(tag)
 - stage: 'Deploy'
